@@ -46,7 +46,7 @@ export const clearCart = () =>
       getCart();
     });
 
-export const login = (username, password) =>
+export const login = (username, password) => {
   fetch(`${API_SERVER}/auth/login`, {
     method: "POST",
     headers: {
@@ -63,6 +63,7 @@ export const login = (username, password) =>
       getCart();
       return data.access_token;
     });
+};
 
 export function useLoggedIn() {
   const [loggedIn, setLoggedIn] = useState(!!jwt.value);

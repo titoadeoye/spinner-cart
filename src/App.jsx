@@ -4,8 +4,8 @@ import { createRoot } from "react-dom/client";
 import "remixicon/fonts/remixicon.css";
 import "./index.scss";
 
-import Header from "home/Header";
 import Footer from "home/Footer";
+import Header from "home/Header";
 import CartContent from "./CartContent";
 
 const root = createRoot(document.getElementById("app"));
